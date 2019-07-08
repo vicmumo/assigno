@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Assigno </title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="logn/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -22,7 +22,7 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="logn/images/signin-image.jpg" alt=""></figure>
-                        <a href="#" class="signup-image-link">Create an account</a>
+                        <a href="{{route('register')}}" class="signup-image-link">Create an account</a>
                     </div>
 
                     <div class="signin-form">
@@ -58,23 +58,20 @@
                             </div>
                         </div>
                         <div class="form-group">
-                                <input type="checkbox"  name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"  for="remember"><span><span></span></span>Remember me</label>
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
                             </div>
-                        
-                        
-
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="form-submit">
                                     {{ __('Login') }}
                                 </button>
-
+<!-- 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                @endif
+                                @endif -->
                             </div>
                         </div>
                     </form>
